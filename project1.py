@@ -31,35 +31,17 @@ tutar={
         "DUDAK BOTOXU":580,
         "KAŞ KALDIRMA BOTOXU":875,
         }
-calisanlar=[["Burcu","Özalan","MANİKÜR&PEDİKÜR"],["Seçil","Demir","NAİLART"],["Yağmur","Kaya","CİLT BAKIMI"],["Tarık","Akar","KAŞ&KİRPİK İŞLEMLERİ"],["Hakan","Şensoy","SAÇ İŞLEMLERİ"],["Deniz","Göksoy","DOLGU&BOTOX İŞLEMLERİ"]]
 class calisanbilgileri():
-    ad=""
-    soyad=""
-    departman=""
-calisan1=calisanbilgileri()
-calisan1.ad=calisanlar[0][0]
-calisan1.soyad=calisanlar[0][1]
-calisan1.departman=calisanlar[0][2]
-calisan2=calisanbilgileri()
-calisan2.ad=calisanlar[1][0]
-calisan2.soyad=calisanlar[1][1]
-calisan2.departman=calisanlar[1][2]
-calisan3=calisanbilgileri()
-calisan3.ad=calisanlar[2][0]
-calisan3.soyad=calisanlar[2][1]
-calisan3.departman=calisanlar[2][2]
-calisan4=calisanbilgileri()
-calisan4.ad=calisanlar[3][0]
-calisan4.soyad=calisanlar[3][1]
-calisan4.departman=calisanlar[3][2]
-calisan5=calisanbilgileri()
-calisan5.ad=calisanlar[4][0]
-calisan5.soyad=calisanlar[4][1]
-calisan5.departman=calisanlar[4][2]
-calisan6=calisanbilgileri()
-calisan6.ad=calisanlar[5][0]
-calisan6.soyad=calisanlar[5][1]
-calisan6.departman=calisanlar[5][2]
+    def __init__(self, ad, soyad, departman):
+        self.ad=ad
+        self.soyad=soyad
+        self.departman=departman
+calisan1=calisanbilgileri("Burcu","Özalan","MANİKÜR&PEDİKÜR")
+calisan2=calisanbilgileri("Seçil","Demir","NAİLART")
+calisan3=calisanbilgileri("Yağmur","Kaya","CİLT BAKIMI")
+calisan4=calisanbilgileri("Tarık","Akar","KAŞ&KİRPİK İŞLEMLERİ")
+calisan5=calisanbilgileri("Hakan","Şensoy","SAÇ İŞLEMLERİ")
+calisan6=calisanbilgileri("Deniz","Göksoy","DOLGU&BOTOX İŞLEMLERİ")
 gunlukkazanc=[]
 toplam=0
 toplamtutar=0
