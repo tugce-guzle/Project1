@@ -79,34 +79,16 @@ while True:
                         soyad=input("SOYAD:")
                         print("\nKATEGORİLER:")
                         print(kategori)
-                        try:
-                            yapilacak=input("İŞLEM YAPILACAK OLAN KATEGORİ:")
-                        except KeyError:
-                            print("LÜTFEN GEÇERLİ BİR KATEGORİ GİRİNİZ.")
-                        finally:
-                            print("LÜTFEN GEÇERLİ BİR KATEGORİ GİRİNİZ.")
-                            yapilacak=input("İŞLEM YAPILACAK OLAN KATEGORİ:")                            
+                        yapilacak=input("İŞLEM YAPILACAK OLAN KATEGORİ:")                          
                         print("\nİŞLEMLER:")
                         print(islem[(yapilacak)])
-                        try:
-                            sonislem=input("YAPILACAK İŞLEM:")
-                        except KeyError:
-                            print("LÜTFEN GEÇERLİ BİR İŞLEM GİRİNİZ.")
-                        finally:
-                            print("LÜTFEN GEÇERLİ BİR İŞLEM GİRİNİZ.")
-                            sonislem=input("YAPILACAK İŞLEM:")
+                        sonislem=input("YAPILACAK İŞLEM:")
                         try:
                             celnumber=int(input("TELEFON NO:"))
                         except ValueError:
                             print("LÜTFEN SADECE SAYI GİRİNİZ.")
                             celnumber=int(input("TELEFON NO:"))
-                        try:
-                            tarih=input("TARİH:")
-                        except ValueError:
-                            print("LÜTFEN TARİHİ GG/AA/YY OLARAK GİRİNİZ.")
-                        finally:
-                            print("LÜTFEN TARİHİ GG/AA/YY OLARAK GİRİNİZ.")
-                            tarih=input("TARİH:")
+                        tarih=input("TARİH:")
                         islemtutari=tutar[(sonislem)]
                         odenecektoplamtutar.append(islemtutari)
                         gunlukkazanc.append(islemtutari)
